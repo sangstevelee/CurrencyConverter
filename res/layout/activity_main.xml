@@ -22,10 +22,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/fromLabel"
-            android:ems="10"
-            android:digits="0123456789"     
-            android:maxLength="20"           
-            android:inputType="numberDecimal" >     
+            android:ems="10"     
+            android:maxLength="20"    
+            android:hint="0.00" 
+            android:inputType="numberDecimal">     
         <requestFocus />
     </EditText>
     <Spinner
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/resultLabel" 
-        android:text="1.00"
+        android:ems="12"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
     <Spinner
@@ -58,6 +58,7 @@
         android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/result"
+        
         android:layout_alignParentRight="true"
 	/>    
   
