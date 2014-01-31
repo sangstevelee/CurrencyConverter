@@ -4,5 +4,10 @@
     <string name="app_name">CurrencyConverter</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="input_hint">Enter amount to convert</string>
+     <string-array name="currency_array">
+        <item>USD</item>
+        <item>BTC</item>
+        <item>DOGE</item>
+    </string-array>
 </resources>

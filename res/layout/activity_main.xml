@@ -5,12 +5,61 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="50dp"
     tools:context=".MainActivity" >
 
+     <TextView
+            android:id="@+id/fromLabel"
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Convert:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+     <EditText
+            android:id="@+id/currencyInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/fromLabel"
+            android:ems="10"
+            android:digits="0123456789"     
+            android:maxLength="20"           
+            android:inputType="numberDecimal" >     
+        <requestFocus />
+    </EditText>
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/currencyInput"
+        android:layout_alignParentRight="true"/>
+
+     <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/currencyInput"
+        android:text="Result:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
     <TextView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resultLabel" 
+        android:text="1.00"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/result"
+        android:layout_alignParentRight="true"
+	/>    
+  
 
 </RelativeLayout>
